@@ -3,6 +3,10 @@
 Classico is a responsive website developed by Node.js, Express.js, MongoDB, React and Sass. This website also is designed by Adobe XD.
 The Backend will run on `localhost:8080` and the Frontend will run on `localhost:3000`.
 
+### Install
+
+Before starting the project you have to run `npm install` in both `api` and `client` folders.
+
 ### Start
 
 To start the project you have to first make a connection with your MongoDB at `localhost: 27017`.
