@@ -1,0 +1,11 @@
+@import '../shared.scss';
+
+.redirect {
+    margin-top: 21.83vh;
+}
+
+@media (min-width: 380px) {
+    .redirect {
+        margin: 35.286vh 9.882vw;
+    }
+}

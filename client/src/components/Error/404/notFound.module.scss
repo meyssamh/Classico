@@ -1,0 +1,163 @@
+@import '../../../variables.scss';
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../../assets/images/game-boy-off.png');
+    background-size: contain;
+    background-position-y: $align;
+    position: absolute;
+    display: flex;
+    justify-content: $align;
+    align-items: $align;
+}
+
+.screen {
+    width: 67.44vw;
+    height: 52.82vh;
+    margin: 10.91vh 16.25vw 36.27vh;
+    display: flex;
+    flex-direction: column;
+    align-items: $align;
+    justify-content: space-between;
+}
+
+.error {
+    display: $not;
+}
+
+.image {
+    display: $not;
+}
+
+.redirect {
+    display: $not;
+}
+
+.title {
+    margin-top: 5.28vh;
+}
+
+.button {
+    margin-bottom: 5.28vh;
+}
+
+.d_pad_up {
+    position: absolute;
+    left: 17.81vw;
+    bottom: 19.95vh;
+}
+
+.d_pad_left {
+    position: absolute;
+    left: 8.44vw;
+    bottom: 14.67vh;
+}
+
+.d_pad_down {
+    position: absolute;
+    left: 17.81vw;
+    bottom: 9.38vh;
+}
+
+.d_pad_right {
+    position: absolute;
+    left: 27.19vw;
+    bottom: 14.67vh;
+}
+
+.buttonA {
+    position: absolute;
+    right: 8.625vw;
+    bottom: 11.62vh;
+}
+
+.textA {
+    margin: 15.5px 0 0;
+    text-align: center;
+    font-weight: 500;
+    color: #262626;
+}
+
+.buttonB {
+    position: absolute;
+    right: 26.75vw;
+    bottom: 5.11vh;
+}
+
+.textB {
+    margin: 15.5px 0 0;
+    text-align: center;
+    font-weight: 500;
+    color: #262626;
+}
+
+@media (min-width: 380px) {
+    .main {
+        background-image: url('../../../assets/images/arcade-machine-off.png');
+        background-size: cover;
+    }
+
+    .screen {
+        width: 59.3vw;
+        height: 79.43vh;
+        margin: 10.29vh 20.35vw;
+        justify-content: unset;
+    }
+
+    .error {
+        display: block;
+        width: 26.134vw;
+        height: 7.031vh;
+        margin: 4.375vh;
+        background-image: url('../../../assets/images/not-found.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 1;
+    }
+
+    .image {
+        display: block;
+        width: 27.599vw;
+        height: 63.541vh;
+        background-image: url('../../../assets/images/out-of-order.png');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 18.229vh;
+    }
+
+    .redirect {
+        display: block;
+        width: 24.816vw;
+        height: 7.031vh;        
+        background-image: url('../../../assets/images/homepage-button.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        border: $not;
+        outline: $not;
+        z-index: 1;
+        padding: 0;
+        position: absolute;
+        top: 78.255vh;
+        cursor: pointer;
+    }
+
+    .title {
+        display: $not;
+    }
+
+    .button {
+        display: $not;
+    }
+
+    .d_pad {
+        display: $not;
+    }
+
+    .control {
+        display: $not;
+    }
+}

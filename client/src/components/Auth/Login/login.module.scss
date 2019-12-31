@@ -1,0 +1,33 @@
+@import '../shared.scss';
+
+.title {
+    margin-bottom: 10.03vh;
+}
+
+.input {
+    margin-bottom: 5.457vh;
+}
+
+.forgot {
+    margin-bottom: 7.92vh;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+@media (min-width: 380px) {
+    .title {
+        margin-bottom: 22.135vh;
+    }
+
+    .input {
+        margin-bottom: 9.895vh;
+    }
+    
+    .forgot {
+        margin-bottom: 9.895vh;
+        cursor: pointer;
+    }
+}

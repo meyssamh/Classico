@@ -1,0 +1,32 @@
+@import '../../../variables.scss';
+@import '../shared.scss';
+
+.title {
+    margin-bottom: 3.52vh;
+}
+
+.input {
+    margin: 3.52vh 0;
+}
+
+.link {
+    color: black;
+    font-family: $mobileFont;
+    font-size: $mobileText;
+    margin: $zero;
+}
+
+@media (min-width: 380px) {
+    .title {
+        margin-bottom: 16.015vh;
+    }
+
+    .input {
+        margin: 5.598vh;
+    }
+
+    .link {
+        font-family: $font;
+        font-size: $normal;
+    }
+}

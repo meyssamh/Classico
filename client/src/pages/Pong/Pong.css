@@ -1,0 +1,113 @@
+.body-main_background {
+    display: none;
+}
+
+@media (min-width: 380px) {
+    .game_over_main {
+        width: 100vw;
+        height: 100vh;
+        background-image: url('../../assets/images/arcade-machine.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: center;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .game_over_screen {
+        width: 59.3vw;
+        height: 79.43vh;
+        margin: 10.29vh 20.35vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .pong_mobile {
+        display: none;
+    }
+
+    .body-main_background {
+        width: 100vw;
+        height: 100vh;
+        background-image: url('../../assets/images/arcade-machine.png');
+        background-color: #000000;
+        background-size: cover;
+        background-position-y: center;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .ball {
+        border-radius: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%) scale(1, 1);
+        background-color: #b3b3b3;
+    }
+    
+    .paddle {
+        width: 2%;
+        height: 20%;
+        border-radius: 5%;
+        position: absolute;
+    }
+    
+    .paddle_type-player {
+        left: 0.2%;
+        background-color: #b3b3b3;
+    }
+    
+    .paddle_type-opponent {
+        left: 98%;
+        background-color: #b3b3b3;
+    }
+
+    .board {
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        background-color: #000000;
+    }
+    
+    .midline {
+        position: absolute;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        border-right: dashed 2px #b3b3b3;
+    }
+    
+    .main {
+        position: relative;
+        width: 50%;
+        height: 70vh;
+        border: solid 1px #b3b3b3;
+    }
+    
+    .score {
+        position: absolute;
+        top: 10%;
+        left: 10vw;
+        width: 30vw;
+        font-family: 'PressStart2P';
+        font-size: 3rem;
+        display: flex;
+        justify-content: space-between;
+        color: #b3b3b3;
+    }
+    
+    .paddle__inner {
+        width: 100%;
+        height: 100%;
+        background-size: 200% 100%;
+    }
+}

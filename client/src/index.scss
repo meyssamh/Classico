@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'PressStart2P';
+  src: local('PressStart2P'), url(./assets/fonts/PressStart2P.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'GameBoy';
+  src: local('GameBoy'), url(./assets/fonts/GameBoy.ttf) format('truetype');
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', 'PressStart2P', 'GameBoy', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

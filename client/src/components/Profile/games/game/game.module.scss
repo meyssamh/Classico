@@ -1,0 +1,70 @@
+@import '../../../../variables.scss';
+
+.game {
+    width: 61.25vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.25rem;
+}
+
+.text {
+    font-family: $mobileFont;
+    font-size: $mobileText;
+    margin: $zero;
+}
+
+.buttons {
+    height: 0.625rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.play {
+    background-color: transparent;
+    border: $not;
+    outline: $not;
+    text-align: right;
+    font-family: $mobileFont;
+    font-size: $mobileText;
+    color: $black;
+    padding: $zero;
+    margin-left: $zero;
+}
+
+.delete {
+    background-color: transparent;
+    border: $not;
+    outline: $not;
+    text-align: right;
+    font-family: $mobileFont;
+    font-size: $mobileText;
+    color: red;
+    padding: $zero;
+    margin-left: 20px;
+}
+
+@media (min-width: 380px) {
+    .game {
+        width: 47.291vw;
+        margin-bottom: 1.875rem;
+    }
+
+    .text {
+        font-family: $font;
+        font-size: $normal;
+    }
+    
+    .play {
+        font-family: $font;
+        font-size: $normal;
+        cursor: $hand;
+    }
+    
+    .delete {
+        font-family: $font;
+        font-size: $normal;
+        cursor: $hand;
+    }
+}

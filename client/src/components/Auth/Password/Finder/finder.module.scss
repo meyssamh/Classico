@@ -1,0 +1,19 @@
+@import '../../shared.scss';
+
+.title {
+    margin-bottom: 10.03vh;
+}
+
+.input {
+    margin-bottom: 12.5vh;
+}
+
+@media (min-width: 380px) {
+    .title {
+        margin-bottom: 22.135vh;
+    }
+    
+    .input {
+        margin-bottom: 22vh;
+    }
+}

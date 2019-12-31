@@ -1,0 +1,33 @@
+@import '../../variables.scss';
+
+.title {
+    margin-top: 5.28vh;
+}
+
+.text {
+    margin-bottom: $normal + 0.25rem;
+}
+
+.buttons {
+    text-align: $align;
+    margin-bottom: 5.28vh;
+}
+
+@media (min-width: 380px) {
+    .title {
+        margin-top: 7.94vh;
+    }
+
+    .text {
+        margin-bottom: $normal + 0.875rem;
+    }
+
+    .empty {
+        height: 0.2rem;
+    }
+    
+
+    .buttons {
+        margin-bottom: 5.338vh;
+    }
+}

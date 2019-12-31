@@ -1,0 +1,29 @@
+@import '../../../variables.scss';
+
+.button {
+    width: 123px;
+    height: 48px;
+    border-radius: 10px;
+    box-shadow: 0 15px 35px 0 #00000080;
+    background-color: #000000b3;
+    font-size: $normal;
+    font-weight: 500;
+    color: #fff;
+    border: $not;
+    outline: $not;
+    padding: $zero;
+}
+
+.button:hover {
+    background-color: #000000;
+}
+
+@media(min-width: 380px) {
+    .button {
+        width: 191px;
+    }
+    
+    .button:hover {
+        cursor: pointer;
+    }
+}

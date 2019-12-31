@@ -1,0 +1,96 @@
+@import '../../../variables.scss';
+
+.error_main {
+    width: 100%;
+    height: inherit;
+    background-color: #000000;
+}
+
+.error {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: $align;
+    justify-content: space-between;
+}
+
+.error_title {
+    font-family: $mobileFont;
+    font-size: $mobileTitle;
+    text-align: $align;
+    color: #667450;
+    margin-top: 5.28vh;
+}
+    
+.error_message {
+    font-family: $mobileFont;
+    font-size: $mobileText;
+    text-align: $align;
+    color: #667450;
+}
+
+.button {
+    width: 25vw;
+    height: 5.28vh;
+    background-color: #667450;
+    font-family: $mobileFont;
+    font-size: $mobileText;
+    text-align: $align;
+    color: #000000;
+    margin-bottom: 5.28vh;
+    border: $not;
+    outline: $not;
+}
+
+@media (min-width: 380px) {
+    .error_main {
+        width: 51vw;
+        height: 56vh;
+        background-color: #d60000;
+        display: flex;
+        align-items: $align;
+        justify-content: $align;
+        margin-top: 11.718vh;
+    }
+    
+    .error {
+        width: 48vw;
+        height: 51vh;
+        background-color: #d60000;
+        border: 5px solid #d6d6d6;
+        display: flex;
+        flex-direction: column;
+        align-items: $align;
+        justify-content: space-between;
+    }
+    
+    .error_title {
+        font-family: $font;
+        font-size: 1.25rem;
+        text-align: $align;
+        color: #d7d7d7;
+        margin-top: 10vh;
+    }
+    
+    .error_message {
+        font-family: $font;
+        font-size: $normal;
+        text-align: $align;
+        color: #d7d7d7;
+    }
+    
+    .button {
+        width: 15vw;
+        height: 8vh;
+        background-color: #d7d7d7;
+        font-family: $font;
+        font-size: $normal;
+        text-align: $align;
+        color: #d60000;
+        margin-bottom: 10vh;
+        border: $not;
+        outline: $not;
+        cursor: pointer;
+    }
+}

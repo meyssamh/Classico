@@ -1,0 +1,42 @@
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.listTitle {
+    text-decoration: none;
+    height: 19px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.listItems {
+    display: none;
+}
+
+.listItem {
+    display: none;
+}
+
+@media (min-width: 430px) {
+    
+    .listItems {
+        display: list-item;
+        height: 16px;
+        margin-bottom: 10px;
+        color: #fff;
+        cursor: default;
+        font-size: 14px;
+    }
+
+    .listItems :last-child {
+        margin: 0;
+    }
+}

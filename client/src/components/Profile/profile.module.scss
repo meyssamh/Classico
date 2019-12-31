@@ -1,0 +1,57 @@
+@import '../../variables.scss';
+
+.signout {
+    position: absolute;
+    top: 12.68vh;
+    right: 19.38vw;
+}
+
+.signout_button {
+    background-color: transparent;
+    text-align: $align;
+    font-family: $mobileFont;
+    font-size: $mobileText;
+    text-align: $align;
+    color: $black;
+    margin: $zero;
+    border: $not;
+    outline: $not;
+}
+
+.title {
+    margin-top: 5.28vh;
+}
+
+.games {
+    margin-top: 5.28vh;
+    margin-bottom: auto;
+}
+
+.button {
+    margin-bottom: 5.28vh;
+}
+
+@media (min-width: 380px) {
+    .signout {
+        top: 14.323vh;
+        right: 25.354vw;
+    }
+
+    .signout_button {
+        font-family: $font;
+        font-size: $normal;
+        cursor: $hand;
+    }
+
+    .title {
+        margin-top: 7.942vh;
+    }
+
+    .games {
+        margin-top: 11.458vh;
+    }
+
+    .button {
+        margin-bottom: 5.338vh;
+    }
+}

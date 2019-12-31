@@ -1,0 +1,39 @@
+@import '../../variables.scss';
+
+.footer {
+    width: 100%;
+    height: 157px;
+    background-color: #000000;
+}
+
+.footerItems {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.logo {
+    display: none;
+}
+
+
+@media (min-width: 380px) {
+    .footer {
+        height: 280px;
+    }
+
+    .footerItems {
+        max-width: 1170px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: inherit;
+        padding-top: 48px;
+        margin: auto;
+    }
+
+    .logo {
+        display: block;
+    }
+}
